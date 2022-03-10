@@ -1,6 +1,6 @@
 import { createProduct } from '../scripts/helpers/objectHelpers';
 
-test('Test the function createProduct', () => {
+test('Test that the function createProduct', () => {
   expect(
     createProduct({
       id: 1234,
