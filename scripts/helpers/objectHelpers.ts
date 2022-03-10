@@ -1,10 +1,10 @@
 import { makeUppercase, replaceSpaces, limitLength } from './stringHelpers';
-import { IProduct } from '../interfaces/iProduct';
+import { newProduct } from '../interfaces/newProduct';
 
 // id is a number
 // code is an uppercase string
 // title is a string with spaces replaced with underscores and a maximum length of 12 characters
-export function createProduct({ id, code, title }: IProduct): IProduct {
+export function createProduct({ id, code, title }: newProduct): newProduct {
   return {
     id: id,
     code: makeUppercase(code),
