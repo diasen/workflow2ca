@@ -1,16 +1,18 @@
 export const query = `query Query {
-    launchesPast(limit: 10) {
-      mission_name
-      launch_date_local
-      launch_site {
-        site_name_long
-      }
-      links {
-        article_link
-        video_link
-      }
-      rocket {
-        rocket_name
+    allFilms {
+      films {
+        title
+        director
+        releaseDate
+        speciesConnection {
+          species {
+            name
+            classification
+            homeworld {
+              name
+            }
+          }
+        }
       }
     }
   }`;
