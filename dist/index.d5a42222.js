@@ -541,10 +541,19 @@ const getGraphQlData = async ()=>{
     ]);
     dataArr.map(({ title , director , releaseDate  })=>{
         document.querySelector('.results').innerHTML += `
-        <div class="card">
-          <h2>${title}</h2>
-          <h5>${director}</h5>
-          <p>${releaseDate}</p>
+        <div class="container">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+              <span class="stars"></span>
+              <h2 class="java">${title}</h2>
+              <p class="java">${director}</p>
+              <p class="java">${releaseDate}</p>
+            </div>
+          </div>
+            <div class="face face2">
+            <h2>${title}</h2>
+          </div>
         </div>
     `;
     });
