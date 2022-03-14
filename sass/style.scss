@@ -4,7 +4,6 @@ body {
 }
 
 .results {
-  background-color: rgb(17, 17, 17);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -13,12 +12,22 @@ body {
 }
 
 .card {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid rgb(0, 0, 0);
   width: 300px;
   height: 300px;
   text-align: center;
   border-radius: 10px;
   margin-top: 90px;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(184, 184, 184);
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 10px auto;
+  height: 250px;
 }
